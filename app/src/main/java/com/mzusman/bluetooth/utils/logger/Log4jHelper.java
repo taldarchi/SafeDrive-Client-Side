@@ -3,15 +3,12 @@ package com.mzusman.bluetooth.utils.logger;
 import android.os.Environment;
 import android.util.Log;
 
-import de.mindpipe.android.logging.log4j.LogConfigurator;
-
 import org.apache.log4j.Logger;
 
+import de.mindpipe.android.logging.log4j.LogConfigurator;
 
-/*
- * Class : .
- * Created by mzusman - morzusman@gmail.com on 5/21/16.
- */
+
+
 public class Log4jHelper {
     public final static String logFileName = "flurry.log";
     private final static LogConfigurator CONFIGURATOR = new LogConfigurator();

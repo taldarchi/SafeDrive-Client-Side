@@ -16,9 +16,7 @@ import com.mzusman.bluetooth.R;
 import com.mzusman.bluetooth.model.Model;
 import com.mzusman.bluetooth.utils.adapters.RidesAdapter;
 
-/**
- * Created by Asaf on 11/06/2016.
- */
+
 public class FragmentRides extends Fragment {
 
 

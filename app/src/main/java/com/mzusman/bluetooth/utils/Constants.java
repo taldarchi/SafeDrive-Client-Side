@@ -1,8 +1,5 @@
 package com.mzusman.bluetooth.utils;
 
-/**
- * Created by mzeus on 4/11/16.
- */
 public class Constants {
 
     public static final String FLURRY_TAG = "FLURRY";

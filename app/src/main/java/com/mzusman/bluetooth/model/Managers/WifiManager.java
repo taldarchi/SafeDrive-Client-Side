@@ -20,9 +20,7 @@ import java.net.Socket;
 import java.net.SocketAddress;
 import java.util.ArrayList;
 
-/**
- * Created by zusmanmo on 15/04/2016.
- */
+
 
 public class WifiManager implements Manager {
 

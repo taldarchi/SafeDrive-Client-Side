@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Flurry</string>
+    <string name="app_name">SafeDrive</string>
     <string name="no_devices">Please make sure you have been paired with an OBD-II device</string>
     <string name="no_devices2">No Devices have been paired</string>
     <string name="bt">BlueTooth</string>

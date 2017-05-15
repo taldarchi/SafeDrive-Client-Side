@@ -3,33 +3,27 @@ package com.mzusman.bluetooth.fragments;
 import android.app.Fragment;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.provider.Settings;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.view.*;
-import android.widget.Button;
+import android.view.LayoutInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.mzusman.bluetooth.R;
 import com.mzusman.bluetooth.activities.DrawerLocker;
 import com.mzusman.bluetooth.enums.AvailableCommandNames;
-import com.mzusman.bluetooth.model.Model;
 import com.mzusman.bluetooth.utils.Constants;
 import com.mzusman.bluetooth.utils.logger.Log4jHelper;
 
 import org.apache.log4j.Logger;
 
-import java.io.File;
 
-/*
- * Class : .
- * Created by mzusman - morzusman@gmail.com on 4/20/16.
- */
 public class FragmentProfile extends Fragment {
 
     Logger log = Log4jHelper.getLogger("ProfileFragment");
@@ -113,16 +107,16 @@ public class FragmentProfile extends Fragment {
                 optionBtn.show();
             }
         });
-        ImageView data = (ImageView) view.findViewById(R.id.data_ib);
-        data.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String url = "http://54.152.123.228/api/v1/flurry/drivers/" + Model.getInstance().getId() + "/";
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
-                startActivity(i);
-            }
-        });
+//        ImageView data = (ImageView) view.findViewById(R.id.data_ib);
+//        data.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                String url = "http://54.152.123.228/api/v1/flurry/drivers/" + Model.getInstance().getId() + "/";
+//                Intent i = new Intent(Intent.ACTION_VIEW);
+//                i.setData(Uri.parse(url));
+//                startActivity(i);
+//            }
+//        });
 
         ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Choose an Action");
         //allows the fragment to get onTouchListener notifications

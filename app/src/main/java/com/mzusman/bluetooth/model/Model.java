@@ -65,7 +65,7 @@ public class Model {
     private static Model instance = new Model();
 
     private Model() {
-        context = FlurryApplication.getContext();
+        context = SafeDriveApplication.getContext();
         locationManager = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
         tagManager.put(Constants.WIFI_TAG, new WifiManager());
         tagManager.put(Constants.BT_TAG, new BtManager());

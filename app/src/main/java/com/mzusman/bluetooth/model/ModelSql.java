@@ -8,13 +8,11 @@ import com.mzusman.bluetooth.model.Managers.SqlManager;
 
 import java.util.List;
 
-/**
- * Created by Asaf on 11/06/2016.
- */
+
 public class ModelSql {
 
 
-    SqlHelper sqlHelper = new SqlHelper(FlurryApplication.getContext());
+    SqlHelper sqlHelper = new SqlHelper(SafeDriveApplication.getContext());
 
     public ModelSql() {
 

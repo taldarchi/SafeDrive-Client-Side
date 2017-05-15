@@ -1,53 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
 
-    <com.wrapp.floatlabelededittext.FloatLabeledEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
-        <EditText android:layout_width="match_parent"
-                  android:gravity="center"
-                  android:hint="@string/name"
-                  android:textColor="@color/fbutton_color_asbestos"
-                  android:singleLine="true"
-                  android:id="@+id/name_register_edit"
-                  android:layout_height="wrap_content"
-        />
-    </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+    <EditText
+        android:id="@+id/name_register_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/name"
+        android:singleLine="true"
+        android:textColor="@color/fbutton_color_asbestos" />
 
-    <com.wrapp.floatlabelededittext.FloatLabeledEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/username_register_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/username"
+        android:singleLine="true"
+        android:textColor="@color/fbutton_color_asbestos" />
 
-        <EditText android:layout_width="match_parent"
-                  android:gravity="center"
-                  android:hint="@string/username"
-                  android:singleLine="true"
-                  android:textColor="@color/fbutton_color_asbestos"
-                  android:id="@+id/username_register_edit"
-                  android:layout_height="wrap_content"
-        />
-    </com.wrapp.floatlabelededittext.FloatLabeledEditText>
-    <com.wrapp.floatlabelededittext.FloatLabeledEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
-        <EditText android:layout_width="match_parent"
-                  android:gravity="center"
-                  android:hint="@string/password"
-                  android:textColor="@color/fbutton_color_asbestos"
-                  android:singleLine="true"
-                  android:id="@+id/password_register_edit"
-                  android:layout_height="wrap_content"
-        />
-    </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+    <EditText
+        android:id="@+id/password_register_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/password"
+        android:singleLine="true"
+        android:textColor="@color/fbutton_color_asbestos" />
 
-    <Button android:layout_width="match_parent"
-            android:text="@string/register"
-            android:id="@+id/register_btn_register"
-            android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/register_btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register" />
 
 </LinearLayout>

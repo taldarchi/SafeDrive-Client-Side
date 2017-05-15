@@ -29,9 +29,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 
-/**
- * Created by amitmu on 04/15/2016.
- */
+
 public class LoginFragment extends Fragment {
     ActionProcessButton actionProcessButton;
     String response;

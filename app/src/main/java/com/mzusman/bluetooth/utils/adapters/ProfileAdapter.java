@@ -11,10 +11,7 @@ import com.mzusman.bluetooth.R;
 
 import java.util.ArrayList;
 
-/*
- * Class : .
- * Created by mzusman - morzusman@gmail.com on 4/20/16.
- */
+
 public class ProfileAdapter extends BaseAdapter {
     private static LayoutInflater inflater;
     Context context;

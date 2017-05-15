@@ -1,7 +1,6 @@
 package com.mzusman.bluetooth.utils.adapters;
 
 import android.content.Context;
-import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,16 +15,12 @@ import com.mzusman.bluetooth.model.RideDescription;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.List;
 
-/**
- * Created by Asaf on 11/06/2016.
- */
+
 public class RidesAdapter extends BaseAdapter {
     ArrayList<RideDescription> rideDescriptions;
     Context context;

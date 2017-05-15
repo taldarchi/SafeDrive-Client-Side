@@ -6,10 +6,7 @@ import retrofit2.http.Headers;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
 
-/*
- * Class : .
- * Created by mzusman - morzusman@gmail.com on 4/19/16.
- */
+
 public interface DriverService {
 
     @Headers("Content-Type: application/json")

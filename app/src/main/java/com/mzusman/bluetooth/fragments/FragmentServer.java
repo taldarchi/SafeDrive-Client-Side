@@ -11,11 +11,8 @@ import android.widget.Toast;
 
 import com.mzusman.bluetooth.R;
 import com.mzusman.bluetooth.model.Model;
-import com.mzusman.bluetooth.utils.Constants;
 
-/**
- * Created by mzeus on 7/15/16.
- */
+
 public class FragmentServer extends DialogFragment {
 
     @NonNull

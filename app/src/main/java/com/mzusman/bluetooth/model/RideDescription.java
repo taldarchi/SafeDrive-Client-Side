@@ -1,8 +1,6 @@
 package com.mzusman.bluetooth.model;
 
-/**
- * Created by Asaf on 11/06/2016.
- */
+
 public class RideDescription {
     private boolean sent;
     private String fileName;

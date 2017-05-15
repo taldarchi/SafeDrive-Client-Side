@@ -2,23 +2,17 @@ package com.mzusman.bluetooth.fragments;
 
 import android.app.Dialog;
 import android.app.DialogFragment;
-import android.content.Intent;
 import android.nfc.FormatException;
 import android.nfc.NdefMessage;
 import android.nfc.NdefRecord;
-import android.nfc.NfcAdapter;
 import android.nfc.Tag;
-import android.nfc.tech.MifareUltralight;
 import android.nfc.tech.Ndef;
-import android.nfc.tech.TagTechnology;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.mzusman.bluetooth.R;
 import com.mzusman.bluetooth.model.Model;
@@ -26,11 +20,8 @@ import com.mzusman.bluetooth.utils.Constants;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
-import java.nio.charset.Charset;
 
-/**
- * Created by mzeus on 6/26/16.
- */
+
 public class NfcFragment extends DialogFragment {
     TextView textView;
 

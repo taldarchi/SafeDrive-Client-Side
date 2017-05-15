@@ -3,26 +3,19 @@ package com.mzusman.bluetooth.activities;
 import android.app.Activity;
 import android.content.Intent;
 import android.nfc.FormatException;
-import android.nfc.NdefMessage;
 import android.nfc.NfcAdapter;
 import android.nfc.Tag;
 import android.nfc.tech.Ndef;
-import android.provider.SyncStateContract;
-import android.util.Log;
 import android.widget.Toast;
 
 import com.mzusman.bluetooth.model.Model;
 import com.mzusman.bluetooth.utils.Constants;
 
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
-import java.util.Arrays;
 
-/**
- * Created by mzeus on 6/26/16.
- */
+
 public class NfcActivity extends Activity {
 
 

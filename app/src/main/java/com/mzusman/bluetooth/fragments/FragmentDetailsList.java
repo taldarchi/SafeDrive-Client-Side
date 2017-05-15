@@ -1,20 +1,14 @@
 package com.mzusman.bluetooth.fragments;
 
-import android.Manifest;
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.location.LocationListener;
-import android.location.LocationManager;
-import android.net.ConnectivityManager;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -22,14 +16,12 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.mzusman.bluetooth.R;
 import com.mzusman.bluetooth.activities.DrawerLocker;
-import com.mzusman.bluetooth.commands.ObdCommand;
-import com.mzusman.bluetooth.enums.AvailableCommandNames;
-import com.mzusman.bluetooth.model.Managers.GpsManager;
 import com.mzusman.bluetooth.model.Model;
 import com.mzusman.bluetooth.utils.Constants;
 import com.mzusman.bluetooth.utils.adapters.DetailsAdapter;
@@ -38,16 +30,7 @@ import com.mzusman.bluetooth.utils.thread.DetailsThread;
 
 import org.apache.log4j.Logger;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.lang.reflect.Method;
-import java.util.HashMap;
-
 import dmax.dialog.SpotsDialog;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 public class FragmentDetailsList extends Fragment {
 
@@ -77,13 +60,15 @@ public class FragmentDetailsList extends Fragment {
         /**
          * Build the factory out side of the manager class
          */
+        ImageView smilyImage= (ImageView)view.findViewById(R.id.smiley_image);
+
         String manager = getArguments().getString(Constants.MANAGER_TAG);
         String address = getArguments().getString(Constants.DEVICE_TAG);
         Model.getInstance().setDeviceAddress(address, manager);
         Model.getInstance().createNewManager(manager);
         ((DrawerLocker) getActivity()).setDrawerEnabled(false);
         listView = (ListView) view.findViewById(R.id.details);
-        DetailsAdapter detailsAdapter = new DetailsAdapter(activity);
+        DetailsAdapter detailsAdapter = new DetailsAdapter(activity,smilyImage);
         listView.setAdapter(detailsAdapter);
         timeView = (TextView) view.findViewById(R.id.time);
         locationInit();

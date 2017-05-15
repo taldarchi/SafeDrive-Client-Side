@@ -24,9 +24,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-/**
- * Created on 04/15/2016.
- */
+
 public class FragmentBlueToothDevices extends Fragment {
 
     DevicesAdapter devicesAdapter;

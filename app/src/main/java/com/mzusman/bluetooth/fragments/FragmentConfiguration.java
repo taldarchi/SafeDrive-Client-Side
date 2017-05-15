@@ -13,9 +13,7 @@ import com.mzusman.bluetooth.R;
 import com.mzusman.bluetooth.model.Model;
 import com.mzusman.bluetooth.utils.Constants;
 
-/**
- * Created by mzeus on 6/26/16.
- */
+
 public class FragmentConfiguration extends DialogFragment {
 
     @NonNull

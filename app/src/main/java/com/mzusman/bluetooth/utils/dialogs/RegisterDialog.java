@@ -19,10 +19,8 @@ import java.io.IOException;
 import fr.tvbarthel.lib.blurdialogfragment.BlurDialogFragment;
 import retrofit2.Callback;
 
-/*
- * Class : RegisterDialog.
- * Created by mzusman - morzusman@gmail.com on 4/25/16.
- */
+
+
 public class RegisterDialog extends BlurDialogFragment {
 
     Logger log = Log4jHelper.getLogger("register");

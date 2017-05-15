@@ -1,9 +1,6 @@
 package com.mzusman.bluetooth.utils.model;
 
-/*
- * Class : .
- * Created by mzusman - morzusman@gmail.com on 4/20/16.
- */
+
 public class Profile  {
     private String Date;
     private String Time;

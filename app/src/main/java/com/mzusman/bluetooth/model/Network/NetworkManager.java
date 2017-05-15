@@ -18,10 +18,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-/*
- * Class : NetworkManager.
- * Created by mzusman - morzusman@gmail.com on 4/19/16.
- */
+
 public class NetworkManager {
 
     String username;

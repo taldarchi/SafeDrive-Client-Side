@@ -2,19 +2,15 @@ package com.mzusman.bluetooth.utils.thread;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
-import android.location.LocationListener;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.util.JsonWriter;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.mzusman.bluetooth.R;
 import com.mzusman.bluetooth.fragments.FragmentDetailsList;
 import com.mzusman.bluetooth.fragments.FragmentProfile;
-import com.mzusman.bluetooth.model.Managers.GpsManager;
 import com.mzusman.bluetooth.model.Model;
 import com.mzusman.bluetooth.utils.Constants;
 import com.mzusman.bluetooth.utils.adapters.DetailsAdapter;
@@ -22,17 +18,12 @@ import com.mzusman.bluetooth.utils.logger.Log4jHelper;
 
 import org.apache.log4j.Logger;
 
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 
 import dmax.dialog.SpotsDialog;
 
-/*
- * Class : DetailsThread.
- * Created by mzusman - morzusman@gmail.com on 4/19/16.
- */
+
 
 /**
  * Extension to thread class - runnable that updates the fragment screen and update the data .

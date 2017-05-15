@@ -1,11 +1,8 @@
 package com.mzusman.bluetooth.model.Managers;
 
 import android.content.ContentValues;
-import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
 
 import com.mzusman.bluetooth.model.RideDescription;
 import com.mzusman.bluetooth.utils.logger.Log4jHelper;
@@ -13,12 +10,9 @@ import com.mzusman.bluetooth.utils.logger.Log4jHelper;
 import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
-/**
- * Created by Asaf on 11/06/2016.
- */
+
 public class SqlManager {
     static Logger log = Log4jHelper.getLogger("SQL");
     public static final int DATABASE_VERSION = 1;
