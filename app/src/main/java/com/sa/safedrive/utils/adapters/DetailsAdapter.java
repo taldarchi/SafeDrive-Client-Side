@@ -72,20 +72,20 @@ public class DetailsAdapter extends BaseAdapter {
             value.setText(separated[1] + ",\n" + separated[2]);
         } else
             value.setText(separated[1]);
-
-        if (value.getText().equals("0.0,\n0.0") || value.getText().equals("-1")) {
-            vi.setBackgroundColor(Color.argb(170, 180, 20, 20));
-        } else {
-            vi.setBackgroundColor(Color.argb(170, 20, 180, 20));
-        }
+//
+//        if (value.getText().equals("0.0,\n0.0") || value.getText().equals("-1")) {
+//            vi.setBackgroundColor(Color.argb(170, 180, 20, 20));
+//        } else {
+//            vi.setBackgroundColor(Color.argb(170, 20, 180, 20));
+//        }
 
         if (name.getText().equals(AvailableCommandNames.ENGINE_RPM.getValue()) && Integer.valueOf(value.getText().toString()) > 1000) {
             Toast.makeText(context, "ENGINE_RPM is too high", Toast.LENGTH_SHORT).show();
-            smileyImage.setImageResource(R.drawable.red_smily);
+//            smileyImage.setImageResource(R.drawable.red_smily);
         }
-        else{
-            smileyImage.setImageResource(R.drawable.green_smily);
-        }
+//        else{
+////            smileyImage.setImageResource(R.drawable.green_smily);
+//        }
 
         if (name.getText().equals(AvailableCommandNames.SPEED.getValue()) && Integer.valueOf(value.getText().toString()) > 40) {
             Toast.makeText(context, "SPEED is too high", Toast.LENGTH_SHORT).show();
