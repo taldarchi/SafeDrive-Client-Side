@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:gravity="center">
 
         <ImageButton
@@ -18,7 +18,8 @@
             android:layout_height="80dp"
             android:scaleType="fitCenter"
             android:src="@drawable/wifi"
-            android:alpha="0.8"/>
+            android:alpha="0.9"
+            android:background="#00000000"/>
 
         <ImageButton
             android:id="@+id/bt_ib"
@@ -26,22 +27,17 @@
             android:layout_height="80dp"
             android:scaleType="fitCenter"
             android:src="@drawable/bluetooth"
-            android:alpha="0.8"/>
-    </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
+            android:alpha="0.9"
+            android:background="#00000000"/>
         <ImageButton
             android:id="@+id/settings_ib"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:scaleType="fitCenter"
             android:src="@drawable/settings"
-            android:alpha="0.8"/>
-        </LinearLayout>
-
-
-
+            android:alpha="0.9"
+            android:background="#00000000"
+            android:layout_marginBottom="15dp"/>
+    </LinearLayout>
 
 </LinearLayout>

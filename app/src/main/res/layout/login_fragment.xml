@@ -11,10 +11,11 @@
         android:id="@+id/textlogo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SAFE DRIVE"
+        android:layout_marginBottom="80dp"
         android:gravity="center"
-        android:textSize="40dp"
-        android:textColor="#000000"/>
+        android:text="SAFE DRIVE"
+        android:textColor="#000000"
+        android:textSize="40dp" />
 
     <LinearLayout
         android:id="@+id/login_layout"
@@ -23,27 +24,24 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textlogo"
         android:layout_marginTop="49dp"
+        android:gravity="center"
         android:orientation="vertical"
-        android:weightSum="1"
-        android:gravity="center">
+        android:weightSum="1">
 
 
-
-            <EditText
-                android:id="@+id/username_edit"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:hint="@string/username"
-                android:singleLine="true" />
+        <EditText
+            android:id="@+id/username_edit"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/username"
+            android:singleLine="true" />
 
 
         <EditText
             android:id="@+id/password_edit"
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="50dp"
-            android:layout_marginStart="50dp"
             android:gravity="center"
             android:hint="@string/password"
             android:inputType="textPassword"
@@ -74,18 +72,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
-            android:text="@string/register" />
+            android:textColor="#ffffff"
+            android:text="@string/register"/>
+
+        <ImageButton
+            android:id="@+id/config_btn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:src="@drawable/settings"
+            android:layout_marginTop="20dp"/>
 
     </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/config_btn"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:scaleType="fitCenter"
-        android:src="@drawable/settings"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
 
 </LinearLayout>

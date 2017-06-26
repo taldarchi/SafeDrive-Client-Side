@@ -8,7 +8,7 @@
 
     <EditText
         android:id="@+id/name_register_edit"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:hint="@string/name"
@@ -17,7 +17,7 @@
 
     <EditText
         android:id="@+id/username_register_edit"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:hint="@string/username"
@@ -27,7 +27,7 @@
 
     <EditText
         android:id="@+id/password_register_edit"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:hint="@string/password"
@@ -37,8 +37,10 @@
 
     <Button
         android:id="@+id/register_btn_register"
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="@string/register" />
+        android:text="@string/register"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"/>
 
 </LinearLayout>
