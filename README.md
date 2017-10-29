@@ -18,3 +18,12 @@ login/register is required.
 - JDK 7+
 - Android Studio
 - Android SDK (API 19)
+
+###Screens:
+---
+##### Choosing method of communication:
+<img src="./pics/Capture.png" alt="commands" width="200" height="300"/>
+##### Live driving data extracted from the OBD-II Device:
+<img src="./pics/Capture2.png" alt="run" width="200" height="300"/>
+##### Successfully sent to the server:
+<img src="./pics/Capture3.png" alt="sent" width="200" height="300"/>
