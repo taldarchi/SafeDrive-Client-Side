@@ -22,7 +22,7 @@ login/register is required.
 ###Screens:
 ---
 ##### Choosing method of communication:
-<img src=".blob/master/pics/Capture.PNG" alt="commands" width="200" height="300"/>
+<img src=".pics/Capture.PNG" alt="com" width="200" height="300"/>
 ##### Live driving data extracted from the OBD-II Device:
 <img src="./pics/Capture2.png" alt="run" width="200" height="300"/>
 ##### Successfully sent to the server:
