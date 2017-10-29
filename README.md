@@ -24,7 +24,7 @@ login/register is required.
 ##### Choosing method of communication:
 <img src="/pics/Capture.PNG" alt="com" width="200" height="380"/>
 ##### Choosing commands:
-<img src="/pics/Capture4.PNG" alt="choose" width="200" height="380"/>
+<img src="/pics/commands.jpg" alt="choose" width="200" height="380"/>
 ##### Live driving data extracted from the OBD-II Device:
 <img src="/pics/Capture2.PNG" alt="run" width="200" height="380"/>
 ##### Successfully sent to the server:
